@@ -1,7 +1,7 @@
 /* Service worker mínimo — cache runtime pro shell abrir offline.
    Estratégia: network-first pro HTML (sempre pega versão nova quando tem rede),
    cache-first pros assets com hash do Vite (imutáveis). */
-const CACHE = 'nb-precifica-v1';
+const CACHE = 'nb-precifica-v2'; /* v2: IDV da landing (fontes+cores+ícones) */
 
 self.addEventListener('install', (e) => {
   self.skipWaiting();
